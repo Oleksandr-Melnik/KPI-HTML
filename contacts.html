@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Контакти - Тисяча Зірок</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <div id="logo">
+                <img src="IMG\лого.png" height="200" alt="Тисяча Зірок">
+                <p>Тисяча Зірок - Елегантні Ювелірні Вироби</p>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Головна</a></li>
+                <li><a href="./about.html">Про нас</a></li>
+                <li><strong><a href="#">Контактна інформація</a></strong></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Контактна інформація</h1>
+
+            <section>
+                <h2>Основна інформація</h2>
+                <p>Адреса: Київ, вул. Шевченка 20, ТЦ "Палладіум", 1-й поверх</p>
+                <p>Телефон: <a href="tel:123456789">123-456-789</a></p>
+                <p>Email: <a href="mailto:info@1000stars.com">info@1000stars.com</a></p>
+            </section>
+
+            <!-- Скарги -->
+
+            <section>
+                <h2>Скарги та питання</h2>
+                <p>Якщо у вас є будь-які питання або скарги щодо наших товарів чи послуг, будь ласка, зв'яжіться з нами. Ми обов'язково вирішимо вашу проблему якомога швидше.</p>
+
+                <form>
+                    <label for="complaint-name">Ваше ім'я</label>
+                    <input type="text" id="complaint-name" name="complaint-name" required>
+
+                    <label for="complaint-email">Ваш email</label>
+                    <input type="email" id="complaint-email" name="complaint-email" required>
+
+                    <label for="complaint-message">Опишіть проблему</label>
+                    <textarea id="complaint-message" name="complaint-message" rows="4" required></textarea>
+
+                    <button type="submit">Надіслати скаргу</button>
+                </form>
+            </section>
+
+            <!-- Технічна підтримка -->
+
+            <section>
+                <h2>Технічна підтримка</h2>
+                <p>Якщо у вас виникли технічні проблеми при користуванні нашим сайтом або ви не можете здійснити покупку, зв'яжіться з нашою технічною підтримкою. Ми допоможемо вам вирішити будь-які питання, що виникли.</p>
+
+                <form>
+                    <label for="support-name">Ваше ім'я</label>
+                    <input type="text" id="support-name" name="support-name" required>
+
+                    <label for="support-email">Ваш email</label>
+                    <input type="email" id="support-email" name="support-email" required>
+
+                    <label for="support-message">Опишіть проблему</label>
+                    <textarea id="support-message" name="support-message" rows="4" required></textarea>
+
+                    <button type="submit">Зв'язатися з техпідтримкою</button>
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>© 2025 Тисяча Зірок</p>
+        </footer>
+    </div>
+</body>
+</html>

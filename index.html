@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Тисяча Зірок - Ювелірні Вироби</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <div id="logo">
+                <img src="IMG\лого.png" alt="Тисяча Зірок" class="logo-image">
+                <p>Тисяча Зірок - Елегантні Ювелірні Вироби</p>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Головна</a></li>
+                <li><a href="./about.html">Про нас</a></li>
+                <li><a href="./contacts.html">Контактна інформація</a></li>
+                <li><a href="./cart.html">Кошик (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Ласкаво просимо до "Тисяча Зірок"!</h1>
+            <p>Ми пропонуємо вам найкращі ювелірні вироби: від елегантних кольє до витончених каблучок. Відкрийте для себе незабутній блиск нашого асортименту.</p>
+
+            <h2>Меню товарів</h2>
+            <div id="catalog">
+                <div class="product-category">
+
+                <!-- Каблучки -->
+
+                <h3>Каблучки</h3>
+                <div class="item">
+                    <img src="IMG\каблучка(діамант).webp" alt="Каблучка з діамантом" height="200">
+                    <div class="item-info">
+                        <div class="item-title">Каблучка з діамантом</div>
+                        <div class="item-price">Ціна: <span>52000 грн</span></div>
+                        <button class="add-to-cart" data-id="ring1" data-name="Каблучка з діамантом" data-price="52000">Додати в кошик</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="IMG\золота каблучка.webp" alt="Золота каблучка" height="200">
+                    <div class="item-info">
+                        <div class="item-title">Золота каблучка</div>
+                        <div class="item-price">Ціна: <span>16000 грн</span></div>
+                        <button class="add-to-cart" data-id="ring2" data-name="Золота каблучка" data-price="16000">Додати в кошик</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="IMG\срібна каблучка.webp" alt="Срібна каблучка" height="200">
+                    <div class="item-info">
+                        <div class="item-title">Срібна каблучка</div>
+                        <div class="item-price">Ціна: <span>2000 грн</span></div>
+                        <button class="add-to-cart" data-id="ring3" data-name="Срібна каблучка" data-price="2000">Додати в кошик</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="IMG\каблучка(смарагд).webp" alt="Каблучка із смарагдом" height="200">
+                    <div class="item-info">
+                        <div class="item-title">Каблучка із смарагдом</div>
+                        <div class="item-price">Ціна: <span>9000 грн</span></div>
+                        <button class="add-to-cart" data-id="ring4" data-name="Каблучка із смарагдом" data-price="9000">Додати в кошик</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="IMG\каблучка(рубін).webp" alt="Каблучка з рубіном" height="200">
+                    <div class="item-info">
+                        <div class="item-title">Каблучка з рубіном</div>
+                        <div class="item-price">Ціна: <span>10000 грн</span></div>
+                        <button class="add-to-cart" data-id="ring5" data-name="Каблучка з рубіном" data-price="10000">Додати в кошик</button>
+                    </div>
+                </div>
+
+                <!-- Сережки -->
+
+                <div class="product-category">
+                <h3>Сережки</h3>
+                <div class="item">
+                    <img src="IMG\золоті сережки(діаманти).webp" alt="Золоті сережки з діамантами" height="200">
+                    <div class="item-info">
+                        <div class="item-title">Золоті сережки з діамантами</div>
+                        <div class="item-price">Ціна: <span>75000 грн</span></div>
+                        <button class="add-to-cart" data-id="necklace1" data-name="Золоті сережки з діамантами" data-price="75000">Додати в кошик</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="IMG\сережки(сапфір).webp" alt="Сережки з червоного золота з сапфіром" height="200">
+                    <div class="item-info">
+                        <div class="item-title">Сережки з червоного золота з сапфіром</div>
+                        <div class="item-price">Ціна: <span>24000 грн</span></div>
+                        <button class="add-to-cart" data-id="necklace2" data-name="Сережки з червоного золота з сапфіром" data-price="24000">Додати в кошик</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="IMG\сережки(перли).webp" alt="Сережки з червоного золота з перлами" height="200">
+                    <div class="item-info">
+                        <div class="item-title">Сережки з червоного золота з перлами</div>
+                        <div class="item-price">Ціна: <span>7000 грн</span></div>
+                        <button class="add-to-cart" data-id="necklace3" data-name="Сережки з червоного золота з перлами" data-price="7000">Додати в кошик</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="IMG\сережки(топаз).webp" alt="Срібні сережки з топазом" height="200">
+                    <div class="item-info">
+                        <div class="item-title">Срібні сережки з топазом</div>
+                        <div class="item-price">Ціна: <span>1500 грн</span></div>
+                        <button class="add-to-cart" data-id="necklace4" data-name="Срібні сережки з топазом" data-price="1500">Додати в кошик</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="IMG\сережки(гранат).webp" alt="Срібні сережки з гранатом" height="200">
+                    <div class="item-info">
+                        <div class="item-title">Срібні сережки з гранатом</div>
+                        <div class="item-price">Ціна: <span>1700 грн</span></div>
+                        <button class="add-to-cart" data-id="necklace5" data-name="Срібні сережки з гранатом" data-price="1700">Додати в кошик</button>
+                    </div>
+                </div>
+
+                <!-- Браслети -->
+
+                <div class="product-category">
+                <h3>Браслети</h3>
+                <div class="item">
+                    <img src="IMG\Золотий браслет.webp" alt="Золотий браслет із діамантом" height="200">
+                    <div class="item-info">
+                        <div class="item-title">Золотий браслет із діамантом</div>
+                        <div class="item-price">Ціна: <span>2500 грн</span></div>
+                        <button class="add-to-cart" data-id="bracelet1" data-name="Золотий браслет із діамантом" data-price="24000">Додати в кошик</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="IMG\фіаніти.webp" alt="Золотий браслет з фіанітами" height="200">
+                    <div class="item-info">
+                        <div class="item-title">Золотий браслет з фіанітами</div>
+                        <div class="item-price">Ціна: <span>16000 грн</span></div>
+                        <button class="add-to-cart" data-id="bracelet2" data-name="Золотий браслет з фіанітами" data-price="16000">Додати в кошик</button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 Тисяча Зірок</p>
+        </footer>
+    </div>
+
+    <script src="cart.js"></script> <!-- Підключаємо JavaScript для кошика -->
+</body>
+</html>
+
+

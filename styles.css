@@ -1,0 +1,159 @@
+/* Загальні стилі для сайту */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spectral', serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 50px auto;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+}
+
+/* Логотип на всіх сторінках */
+header {
+    grid-area: header;
+    background-color: #333;
+    padding: 0;
+    text-align: center;
+}
+
+#logo .logo-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Логотип для сторінок "Про нас" і "Контакти" */
+header {
+    padding: 10px;
+}
+
+#logo .logo-image {
+    max-width: 200px;  /* Збільшити логотип для цих сторінок */
+    margin: 0 auto;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #e9afaf;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Основний вміст */
+main {
+    grid-area: main;
+    padding: 40px;
+}
+
+/* Текст на сторінці "Про нас" */
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #2e2e2e;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2e2e2e;
+}
+
+p {
+    font-size: 20px; /* Текст трохи більший */
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Для сторінки "Кошик" (збільшити фото) */
+#cart-items img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;  /* Збільшити фото */
+    object-fit: cover;
+    margin: 10px 0;
+}
+
+/* Стилі для сторінки "Про нас" */
+#about h1 {
+    color: #707070;
+}
+
+.product-category {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin-bottom: 40px;
+}
+
+/* Стилі для мобільних пристроїв */
+@media (max-width: 768px) {
+    #catalog {
+        grid-template-columns: 1fr;
+    }
+
+    .product-category {
+        width: 90%;
+        margin: 20px 0;
+    }
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Додаткові стилі для карток товарів */
+.item {
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

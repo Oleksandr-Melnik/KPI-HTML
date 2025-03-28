@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Кошик - Тисяча Зірок</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <div id="logo">
+                <img src="IMG\лого.png" height="200" alt="Тисяча Зірок">
+                <p>Тисяча Зірок - Елегантні Ювелірні Вироби</p>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Головна</a></li>
+                <li><a href="./about.html">Про нас</a></li>
+                <li><a href="./contacts.html">Контактна інформація</a></li>
+                <li><strong><a href="#">Кошик</a></strong></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Ваш Кошик</h1>
+            <div id="cart-items">
+                <p>Ваш кошик порожній</p> <!-- Це буде оновлюватися через JS -->
+            </div>
+
+            <h2>Разом: <span id="total-price">0 грн</span></h2>
+
+            <button id="checkout">Оформити замовлення</button>
+        </main>
+
+        <footer>
+            <p>© 2025 Тисяча Зірок</p>
+        </footer>
+    </div>
+
+    <script src="cart.js"></script> <!-- Підключаємо JavaScript для кошика -->
+</body>
+</html>
